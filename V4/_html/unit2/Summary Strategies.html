@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Summarizing a Text</title>
+    <link rel="stylesheet" href="../../js/jquery-ui.css">
+    <link rel="stylesheet" href="../../css/ecentennial.css">
+    <link rel="stylesheet" href="../../css/font-awesome.css">
+</head>
+<body>
+<h1 class="readparticipate-icon-text">Summary Strategies</h1>
+
+<table class=" blue-highlight">
+    <caption>
+        <p><strong>Summary Strategies and Sample Summary: Video Post</strong></p>
+    </caption>
+    <tbody>
+    <tr>
+        <td>
+            <iframe width="400" height="225" src="https://www.youtube.com/watch?time_continue=2&v=mUBaimkseJA?wmode=opaque&amp;rel=0"
+                    frameborder="0" allowfullscreen=""></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Video post by Farah Marfatia: Marfatia, F. (2017, June 30). I’m Canadian born--but still hated. The Toronto Star.</p>
+            <p class="question-icon"><strong>Retrieved from:&nbsp;</strong>
+                https://www.youtube.com/watch?time_continue=2&v=mUBaimkseJA
+            </p>
+            <p>Alternate Link: <a href="https://www.thestar.com/news/insight/2017/06/30/we-are-canadians-but-its-complicated.html" target="_blank">We are Canadians, but it’s complicated.</a> Scroll down and click on “Farah”</p>
+                <ol>
+                    <li>Watch the video all the way through.</li>
+                    <li>Watch the video a second time and take point form notes of the content.
+                        <div class="grey-highlight">
+                            Notes on Farah Marfatia’s video
+                        <ul>
+                            <li>when she has felt most Canadian -- strange question</li>
+                            <li>stereotypes: passive, tolerant</li>
+                            <li>Cdn’s neither passive nor tolerant</li>
+                            <li>story of getting gas on the way to the cottage: elderly lady goes up to her father and asks when he’s planning to blow up the gas station. Farah gets angry: her father gives her a look that says, don’t get into it (in this quintessentially Canadian landscape, she felt least cdn)</li>
+                            <li>capacity to hate: not tolerant</li>
+                            <li>hope lies here: we can learn to respect</li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        Write out the summary in full, concentrating on putting the main point and meaning of the original into your own words, condensing it, and staying true to its meaning (no interpretation or judgment or opinion of your own should be included). Then, compare your work to this <a href="#" id="dialog-link">sample summary</a> .
+                    </li>
+                </ol>
+            <!-- ui-dialog -->
+            <div id="dialog" title="Summary of Farah Marfatia’s Video Post">
+                <p>
+                    In her video post from The Toronto Star’s “We are Canadians, but it’s complicated” series, Farah Marfatia (2017) addresses the question of when she has felt most Canadian. She points out that this question is strange-like asking a human when she feels most human. Marfatia explains that she was born and raised in Canada, so she has simply always felt Canadian.
+                </p>
+                <p>
+                    Marfatia goes on to explore two stereotypes about Canadians: that they are passive and tolerant. Marfatia explains why she believes that Canadians are neither. She tells the story of going to her family cottage. On the way, the family stopped for gas, where a seemingly sweet old lady asked Marfatia’s father when he was planning to blow up the gas station. Describing her rage, Marfatia says this was the moment, in the most quintessentially Canadian landscape, when she felt least Canadian.
+                </p>
+                <p>
+                    Marfatia concludes her video post by wondering about this capacity for hatred, and how it shows that Canadians are not tolerant as a people. But she also claims that hope lies in this same challenge, because it means that there is room for education, and for people to learn how to be respectful.
+                </p>
+            </div>
+
+            <p>
+                Optional Exercise: Try this strategy with Marfatia’s video. Compare your notes with the sample below.
+            </p>
+        </td>
+
+    </tr>
+    </tbody>
+</table>
+
+<p class="footer"></p>
+<script src="../../js/external/jquery/jquery.js"></script>
+<script src="../../js/jquery-ui.js"></script>
+<script src="../../js/ecentennial.js"></script>
+<script>
+
+    $( "#dialog" ).dialog({
+        autoOpen: false,
+        width: 600,
+        buttons: [
+            {
+                text: "Close",
+                click: function() {
+                    $( this ).dialog( "close" );
+                }
+            }
+        ]
+    });
+    // Link to open the dialog
+    $( "#dialog-link" ).click(function( event ) {
+        $( "#dialog" ).dialog( "open" );
+        event.preventDefault();
+    });
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,767 @@
+@charset "utf-8";
+
+/*	D2l 'Main.css' merged CSS
+----------------------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+/* CSS Template - Centennial College - Academic Quality, Center for Academic Excellence 2017
+ * Last Modified: June 2017 - Caroline Nichol
+ *
+ * Default Theme
+ *
+ * Description: 
+ * Templates created for development purposes for eCentennial D2L LMS - Online/Hybrid Course Development Initiative 
+----------------------------------------------------------------- */
+
+
+/* Font Colour - based on eCentennials branded colours
+---------------------------------------------------------*/
+
+.lime{color: #D4DF38;}
+.red{color: #9F2824;}
+.orange{color: #CE5C00;}
+.lightorange{color: #D19700;}
+.yellow{color: #EADB1B;}
+.lightblue{color: #70B4F2;}
+.blue{color: #0077D4;}
+.darkblue{color: #003796;}
+.purple{color: #503D6B;}
+.darkgreen{color: #787B1B;}
+.grey{color: #454546;}
+.lightgrey{color: #CBCACC;}
+.textgrey{color: #414042;}
+.white{color: #FFFFFF;}
+
+
+
+/* HTML Global Styles
+----------------------*/
+
+body {
+	background: #fff;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:16px;
+	line-height:1.375em;
+	color: #252327;
+	margin:0px;
+	padding: 30px;
+
+	margin-right: auto;
+	margin-left: auto;
+
+	border-bottom: 10px solid #D4DF38;
+	border-top: 5px solid #D4DF38;
+
+	position: relative;
+}
+
+body:before {
+  content: "";
+  
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  border-top: 25px solid #454546;
+}
+
+.footer {background-image: url('banner.png'); background-color: #454546; margin: 30px -30px -30px -30px; color: white; font-size: .8em; text-align: center; padding: 20px;clear: both;}
+
+.next-page{
+background-color: #CBCACC; margin: 30px -30px -30px -30px; color: white; font-size: .8em; text-align: center; padding: 20px;
+
+}
+
+
+
+
+/* Typography
+----------------*/
+
+p {font-size:1em;margin: 15px 0 10px;text-align: left;}
+
+h1 {background: #454546; color: #FFFFFF; border-top: 5px solid #D4DF38; font-size: 1.5em; font-weight: bold; margin: 20px -30px; padding: 10px 30px;line-height: 1.375em;text-align: left;}
+/* removes margin top to blend with the body's bored top */
+h1:first-child { margin-top:-25px;}
+h2 {color: #414042;font-size:1.5em;line-height: 1.375em; border-bottom: 1px solid #CBCACC;padding-bottom: 5px;text-align: left;}
+h3 {color: #414042;font-size:1.25em;font-weight: bold;text-align: left;margin-bottom: -5px;}
+h4 {color: #414042;font-weight:bold;font-size:1.025em;text-align: left;}
+
+h4 {
+    margin: 15px -26px 0px -26px;
+    background-color: rgba(112, 180, 242,.3);
+    padding: 10px 25px;
+    border-radius: 0px;
+}
+
+
+a:link {color: #003796;}
+a:visit {color: #503D6B;}
+a:hover {background-color: rgba(0, 119, 212, .1); transition: all .5s ease;}
+a:focus {background-color: rgba(0, 119, 212, .1); outline: dotted 2px #0077D4;}
+
+
+/* ------ Links with external icon with accessible (hidden) text
+--------------------------------------------------------------- */
+
+a[href^="https"]:after, a[href^="http"]:after, a[href^="www."]:after, table a[href^="https"]:after, table a[href^="www."]:after, table a[href^="http"]:after  {
+    content: "\f08e (external link)";
+    font-family: FontAwesome;
+    margin-left: 5px;
+    font-weight: normal;
+    text-decoration: none;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    width: 1em;
+    height: 1.15em;
+    font-size: .9em;
+}
+    
+
+
+
+ul li, ol li{margin-top:5px;}
+ul, ol{margin-bottom:25px;}
+ul li ul, ol li ol, ul li ol, ol li ul {margin-bottom: 0px;}
+
+blockquote {border-left: 5px solid #CBCACC; margin-left: 50px; padding-left: 20px;}
+blockquote:before {font-family: FontAwesome;content: '\f10d';color: #CBCACC;font-size: 1.3em;margin-right: 40px;margin-left: -60px;}
+
+.large-text {font-size: 2.25em;line-height: 1.2em; font-weight: normal; margin-top: 20px;}
+.small-text {font-size: .8em;line-height: 1.25em;}
+
+
+
+
+
+/* Alignments
+-----------------------------------*/
+/* Any variation of image alignment attributes with specific margins */
+img[align="left"], img[style*="float: left"], img[style*="float:left"] {margin: 0 20px 10px 0;}
+img[align="right"], img[style*="float: right"], img[style*="float:right"] {margin:0 0 10px 20px;}
+
+p[align="left"], p[style*="float: left"], p[style*="float:left"] {margin: 0 20px 10px 0;}
+p[align="right"], p[style*="float: right"], p[style*="float:right"] {margin:0 0 10px 20px;}
+
+
+div.image-caption{
+    border: 1px solid #D19700;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.right {
+    float: right;
+    margin: 10px 0 10px 15px;
+}
+
+.left {
+    float: left;
+    margin: 10px 15px 10px 0;
+}
+
+div.image-caption img {
+    margin: -7px -100%;
+    min-height: 200px;
+}
+
+div.image-caption p {
+    border-top: 1px solid #D19700;
+    padding: 15px;
+    background-color: rgba(206, 92, 0, .1);
+    margin: 0;
+    font-size: .8em;
+    line-height: 1.25em;
+    text-align: center;
+}
+
+
+/* Layout and Structural Elements
+------------------------------------ */
+
+hr {opacity: .1;margin:50px 0; clear: both;}
+
+.col-3 {
+    width: 30%;
+    float: left;
+    padding: 1% 3% 1% 0%;
+    margin: 10px 0px;
+}
+
+.col-3 img{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #454546;
+    box-shadow: 2px 2px 3px #aaa;
+}
+
+.col-3 h3, .col-3 p{
+    margin: 10px 0;
+}
+
+.col-2 {
+    width: 46%;
+    float: left;
+    padding: 0 2%;
+    margin: 10px 0px;
+}
+
+.col-2 img{
+    border-radius: 5px;
+    border: 1px solid #454546;
+    box-shadow: 2px 2px 3px #aaa;
+}
+
+.col-2 h3, .col-2 p{
+    margin: 10px 0;
+}
+
+
+#incorrect, #correct { background: #CBCACC ;padding:10px; }
+
+
+.activity {
+    width: 100%;
+    text-align: center;
+}
+
+.activity .option {
+
+}
+
+
+
+
+/*  Highlights
+------------------------ */
+/* Base structure */
+[class*="highlight"] {
+    min-height:20px;
+    margin:30px 0;
+    padding:10px;
+    clear: both;
+    box-shadow: 2px 2px 4px rgba(69, 69, 70, 0.1);
+} 
+
+/* Background and Border colour */
+.grey-highlight {background-color: rgba(69, 69, 70, .1); border: 1px solid #454546;}
+.red-highlight {background-color: rgba(159, 40, 36, .1);border: 1px solid #9F2824;}
+.orange-highlight {background-color: rgba(206, 92, 0, .1);border: 1px solid #CE5C00;}
+.yellow-highlight {background-color: rgba(234, 219, 27, .1);border: 1px solid #EADB1B;}
+.blue-highlight {background-color: rgba(0, 119, 212, .1);border: 1px solid #0077D4;}
+.purple-highlight {background-color: rgba(80, 61, 107, .1);border: 1px solid #503D6B;}
+.darkgreen-highlight {background-color: rgba(120, 123, 27, .1);border: 1px solid #787B1B;}
+.lime-highlight {background-color: rgba(212, 223, 56, .1);border: 1px solid #D4DF38;}
+.white-highlight {background-color: #fff;border: 1px solid #CBCACC;}
+
+[class$="highlight"] h2{border-bottom:none;margin: 5px 0; padding: 0;}
+[class$="highlight"] h3{border-bottom:none;margin: 5px 0; padding: 0;}
+[class$="highlight"] a{border-bottom:none;margin: 5px 0; padding: 0;}
+
+
+/*  Tables
+------------------------ */
+/* Base structure */
+table {
+    min-width:50%;
+    max-width:100%;
+    width: 100% !important;
+    vertical-align: middle;
+    padding: 10px;
+    margin:30px 0px;
+    font-size: .9em;
+    border-spacing: 3px;
+    table-layout : fixed;
+}
+
+caption, th, td {
+    padding: 5px 10px;
+    border:1px solid #cccccc;
+}
+
+table.unstyled {
+}
+
+table.unstyled caption, table.unstyled th, table.unstyled td {
+    border:none;
+}
+
+
+/* Table with highlight COL and ROW Scope */
+table[class$="highlight"] caption {border:none;font-weight: bold;background: inherit;text-align: left;}
+table[class$="highlight"] th, table[class$="highlight"] td{border:none; text-align: left;vertical-align: top;}
+/* If a table has two column make them equal in size */
+/*table[class$="highlight"] th + th {width: 50%;}*/
+/*table[class$="highlight"] th + th + th {width: 33%;}*/
+
+table.grey-highlight th[scope="col"], table.grey-highlight th[scope="row"]  {background-color: rgba(69, 69, 70, .1);}
+table.lime-highlight th[scope="col"], table.lime-highlight th[scope="row"] {background-color: rgba(212, 223, 56, .1);}
+table.blue-highlight th[scope="col"], table.blue-highlight th[scope="row"] {background-color: rgba(0, 119, 212, .1);}
+table.purple-highlight th[scope="col"], table.purple-highlight th[scope="row"] {background-color: rgba(80, 61, 107, .1);}
+
+table.red-highlight th[scope="col"], table.red-highlight th[scope="row"] {background-color: rgba(159, 40, 36, .1);}
+table.orange-highlight th[scope="col"], table.orange-highlight th[scope="row"] {background-color: rgba(206, 92, 0, .1);}
+table.yellow-highlight th[scope="col"], table.yellow-highlight th[scope="row"] {background-color: rgba(234, 219, 27, .1);}
+table.darkgreen-highlight th[scope="col"], table.darkgreen-highlight th[scope="row"] {background-color: rgba(120, 123, 27, .1);}
+
+
+
+
+/*  Custom Tables 
+------------------------ */
+
+/* Base Structure */
+table[class$="table"] {color: #252327;}
+
+table[class$="table"] td, 
+table[class$="table"] th{vertical-align: middle;padding: 5px 15px;}
+
+table[class$="table"] caption {text-align:left; font-size:1.2em; padding:10px 15px;}
+
+/* Data Cells - Column and Row Headers - Caption - Odd Row Shade*/
+
+
+/* WHITE  */
+table.white-table {border-collapse: collapse;}
+table.white-table caption,
+table.white-table td, 
+table.white-table th {border:1px solid #fff;}
+
+table.white-table caption {background-color: #fff;}
+table.white-table th, table.white-table th[scope="row"], table.white-table th[scope="col"] {background-color: #fff;}
+
+table.white-table tr:nth-child(odd) {background-color: #fff;}
+
+/* LIGHT GREY */
+table.lightgrey-table {border-collapse: collapse;}
+table.lightgrey-table caption,
+table.lightgrey-table td, 
+table.lightgrey-table th {border:1px solid #CBCACC;}
+
+table.lightgrey-table caption {background-color: rgba(203, 202, 204, 1);}
+table.lightgrey-table th, table.lightgrey-table th[scope="row"], table.lightgrey-table th[scope="col"] {background-color: rgba(203, 202, 204, .6);}
+
+table.lightgrey-table tr:nth-child(odd) {background-color: rgba(203, 202, 204, .1);}
+
+/* GREY */
+table.grey-table {border-collapse: collapse;}
+table.grey-table caption,
+table.grey-table td, 
+table.grey-table th {border:1px solid #414042;}
+
+table.grey-table caption {color: #ffffff; background-color: #414042;}
+table.grey-table th, table.grey-table th[scope="row"], table.grey-table th[scope="col"] {color:#FFF;background-color:rgba(69, 69, 70, .9);}
+
+table.grey-table tr:nth-child(odd) {background-color: rgba(69, 69, 70, .1);}
+
+/* Lime  */
+table.lime-table {border-collapse: collapse;}
+table.lime-table caption,
+table.lime-table td, 
+table.lime-table th {border: 1px solid #D4DF38;}
+
+table.lime-table caption {background-color: #D4DF38;}
+table.lime-table th, table.lime-table th[scope="row"], table.lime-table th[scope="col"] {background-color: rgba(212, 223, 56, .5);}
+
+table.lime-table tr:nth-child(odd) {background-color: rgba(212, 223, 56, .1);}
+
+/* LIGHT BLUE  */
+table.lightblue-table {border-collapse: collapse;}
+table.lightblue-table caption,
+table.lightblue-table td, 
+table.lightblue-table th {border: 1px solid #70B4F2;}
+
+table.lightblue-table caption {background-color: #70B4F2;}
+table.lightblue-table th, table.lightblue-table th[scope="row"], table.lightblue-table th[scope="col"] {background-color: rgba(112, 180, 242, .4);}
+
+table.lightblue-table tr:nth-child(odd) {background-color: rgba(112, 180, 242, .1);}
+
+/* BLUE  */
+table.blue-table {border-collapse: collapse;}
+table.blue-table caption,
+table.blue-table td, 
+table.blue-table th { border: 1px solid #005aa3;}
+
+table.blue-table caption {color: #ffffff; background-color: #005aa3;}
+table.blue-table th, table.blue-table th[scope="row"], table.blue-table th[scope="col"] {background-color: rgba(0, 90, 163, .4);}
+
+table.blue-table tr:nth-child(odd) {background-color: rgba(0, 90, 163, .1);}
+
+/* DARK BLUE  */
+table.darkblue-table {border-collapse: collapse;}
+table.darkblue-table caption,
+table.darkblue-table td, 
+table.darkblue-table th { border: 1px solid #003796;}
+
+table.darkblue-table caption {color: #ffffff; background-color: #003796;}
+table.darkblue-table th, table.darkblue-table th[scope="row"], table.darkblue-table th[scope="col"] {background-color: rgba(0, 55, 150, .3);}
+
+table.darkblue-table tr:nth-child(odd) {background-color: rgba(0, 55, 150, .1);}
+
+/* Purple  */
+table.purple-table {border-collapse: collapse;}
+table.purple-table caption,
+table.purple-table td, 
+table.purple-table th { border: 1px solid #503D6B;}
+
+table.purple-table caption {color: #ffffff; background-color: #503D6B;}
+table.purple-table th, table.purple-table th[scope="row"], table.purple-table th[scope="col"] {background-color: rgba(80, 61, 107, .3);}
+
+table.purple-table tr:nth-child(odd) {background-color: rgba(80, 61, 107, .1);}
+
+/* Red  */
+table.red-table {border-collapse: collapse;}
+table.red-table caption,
+table.red-table td, 
+table.red-table th { border: 1px solid #9F2824;}
+
+table.red-table caption {color: #ffffff; background-color: #9F2824;}
+table.red-table th, table.red-table th[scope="row"], table.red-table th[scope="col"] {background-color: rgba(159, 40, 36, .3);}
+
+table.red-table tr:nth-child(odd) {background-color: rgba(159, 40, 36, .1);}
+
+/* orange  */
+table.orange-table {border-collapse: collapse;}
+table.orange-table caption,
+table.orange-table td, 
+table.orange-table th { border: 1px solid #CE5C00;}
+
+table.orange-table caption {background-color: rgba(206, 92, 0, .5);}
+table.orange-table th, table.orange-table th[scope="row"], table.orange-table th[scope="col"] {background-color: rgba(206, 92, 0, .4);}
+
+table.orange-table tr:nth-child(odd) {background-color: rgba(206, 92, 0, .1);}
+
+/* lightorange  */
+table.lightorange-table {border-collapse: collapse;}
+table.lightorange-table caption,
+table.lightorange-table td, 
+table.lightorange-table th { border: 1px solid #D19700;}
+
+table.lightorange-table caption {background-color: rgba(209, 151, 0, .5)}
+table.lightorange-table th, table.lightorange-table th[scope="row"], table.lightorange-table th[scope="col"] {background-color: rgba(209, 151, 0, .4);}
+
+table.lightorange-table tr:nth-child(odd) {background-color: rgba(209, 151, 0, .1);}
+
+/* yellow  */
+table.yellow-table {border-collapse: collapse;}
+table.yellow-table caption,
+table.yellow-table td, 
+table.yellow-table th { border: 1px solid #EADB1B;}
+
+table.yellow-table caption {background-color: #EADB1B;}
+table.yellow-table th, table.yellow-table th[scope="row"], table.yellow-table th[scope="col"] {background-color: rgba(234, 219, 27, .5);}
+
+table.yellow-table tr:nth-child(odd) {background-color: rgba(234, 219, 27, .1);}
+
+/* darkgreen  */
+table.darkgreen-table {border-collapse: collapse;}
+table.darkgreen-table caption,
+table.darkgreen-table td, 
+table.darkgreen-table th { border: 1px solid #787B1B;}
+
+table.darkgreen-table caption {background-color: rgba(120, 123, 27, .5);}
+table.darkgreen-table th, table.darkgreen-table th[scope="row"], table.darkgreen-table th[scope="col"] {background-color: rgba(120, 123, 27, .5);}
+
+table.darkgreen-table tr:nth-child(odd) {background-color: rgba(120, 123, 27, .1);}
+
+
+
+
+
+
+/*---------------------------------*/
+/* CUSTOMIZED ICONS
+-----------------------------------*/
+
+
+
+/* Font Awesome Header Icons
+--------------------------------*/
+
+
+/* ---------- ICONS Without Text (BEFORE) ---------- */
+
+
+/*[class$="icon"]:before {
+    float: left;
+}*/
+
+.learningoutcome-icon:before {content: "\f0eb";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}/* Icon:	Light Buld */
+.checklist-icon:before {content: "\f046";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}		/* Icon:	Checkbox */
+.readings-icon:before {content: "\f02d";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}		/* Icon:	Book */
+.info-icon:before {content: "\f05a";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}			/* Icon:	information Sign */
+.question-icon:before {content: "\f059";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}		/* Icon:	Question Sign */
+.sync-icon:before {content: "\f021";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}			/* Icon:	Sync  */
+.file-icon:before {content: "\f15c";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}        /* Icon:    file  */
+.activity-icon:before {content: "\f245";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}       /* Icon:    Mouse  */
+.summary-icon:before {content: "\f03a";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}        /* Icon:    Summary  */
+.reference-icon:before {content: "\f02e";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}      /* Icon:    Bookmark  */
+.links-icon:before {content: "\f0c1";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}          /* Icon:    Links  */
+
+.pencil-icon:before {content: "\f040";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}          /* Icon:    Pencil  */
+.percentage-icon:before {content: "\f295";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}          /* Icon:    percentage  */
+
+
+
+.next-icon:before {content: "\f18e";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}           /* Icon:    right arrow  */
+.due-icon:before {content: "\f073";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}            /* Icon:    calendar  */
+.video-icon:before {content: "\f16a"; font-family: FontAwesome;margin-right: 10px;font-weight: normal;}         /* Icon:    Play Button */
+.techtips-icon:before {content: "\f0ad"; font-family: FontAwesome;margin-right: 10px;font-weight: normal;}      /* Icon:    wrench */
+.powerpoint-icon:before {content: "\f1c4";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}     /* Icon:    PPT */
+.discussion-icon:before {content: "\f086";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}     /* Icon:    Speech Bubbles */
+.connect-icon:before {content: "\f1e6";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}        /* Icon:    plug */
+.puzzle-icon:before {content: "\f12e";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}         /* Icon:    puzzle */
+.bubble-icon:before {content: url('../images/bubble.png');margin-right: 10px;font-weight: normal;}              /* Icon:   thought bubble */
+
+.puzzles-icon:before {content: url('../images/puzzle.png');margin-right: 10px;font-weight: normal;}             /* Icon:   puzzle piece */
+.content-icon:before {content: "\f002";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}      /* Icon:    Magnifying Glass */
+
+
+.online-icon:before {content: "\f109";font-family: FontAwesome;margin-right: 10px;font-weight: normal;}         /* Icon:    Laptop  */
+.inclass-icon:before {content: url('../images/inclass.png');margin-right: 10px;font-weight: normal;}            /* Icon:   inclass prof */
+
+
+
+/* ----------- TAB ICONS without text ---------------- */
+[class*="icon-tab"]:before {
+    padding-bottom: 5px;
+    box-shadow: 2px 3px 2px #ddd;
+}
+
+[class*="icon-tab"]:before {
+    font-family: FontAwesome;
+    float: right;
+    font-weight: normal;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 10px 15px 10px 20px;
+    margin-top: -15px;
+    margin-left: 10px;
+    border-radius: .5em .5em 0em .5em;
+}
+
+.synchronous-icon-tab {border-bottom: 1px solid #503D6B;}
+.synchronous-icon-tab:before {
+    content: "\f021";
+    background-color: #503D6B;
+}
+
+.practice-icon-tab {border-bottom: 1px solid #503D6B;}
+.practice-icon-tab:before {
+    content: "\f245";
+    background-color: #503D6B;
+}
+
+.asynchronous-icon-tab {border-bottom: 1px solid #503D6B;}
+.asynchronous-icon-tab:before {
+    content: "\f021";
+    background-color: #503D6B;
+}
+
+
+/* ---------- ICONS With Text (AFTER) ---------- */
+[class*="icon-text"]:after {
+    font-family: FontAwesome;
+    float: right;
+    font-weight: normal;
+    font-size: .8em;
+    color: #CBCACC;
+}
+
+.practice-icon-text:after {content: "\f245  Practice";} 			/* Icon:	Mouse pointer */
+.graded-icon-text:after {content: "\f295  Graded";} 				/* Icon:	Percent Sign */
+.individual-icon-text:after {content: "\f007  Individual Work";}    /* Icon:	Single Student */
+.support-icon-text:after {content: "\f05a  Support";}               /* Icon:	Information i circle */
+.groups-icon-text:after {content: "\f0c0  Groups";} 				/* Icon:	Group multiple students */
+.help-icon-text:after {content: "\f059  Help";}					    /* Icon:	Question Sign */
+.calendar-icon-text:after {content: "\f274  Calendar";} 			/* Icon:	Calendar */
+.tools-icon-text:after {content: "\f0ad  Tools";}					/* Icon:	Wrench */
+.video-icon-text:after {content: "\f16a  Watch & Listen";}		    /* Icon:	Play Button */
+.discussion-icon-text:after {content: "\f086  Discussion Post";}	/* Icon:	Speech Bubbles */
+.content-icon-text:after {content: "\f002  Discover & Learn";}      /* Icon:	Magnifying Glass */
+.dropbox-icon-text:after {content: "\f01c  Dropbox";}               /* Icon:    Dropbox inbox */
+.powerpoint-icon-text:after {content: "\f1c4  Download";}           /* Icon:    PPT inbox */
+
+.feedback-icon-text:after {content: "\f0a1  Feedback";}             /* Icon:    megaphone */
+
+.gettingstarted-icon-text:after {content: "\f14e  Getting Started";}                    /* Icon:    Flag */
+.readwatch-icon-text:after {content: "\f06e  Read and Watch";}                          /* Icon:    Eye */
+.participate-icon-text:after {content: "\f040  Participate";}                           /* Icon:    Pencil */
+.readwatchparticipate-icon-text:after {content: "\f040  Read, Watch and Participate";}  /* Icon:    Pencil */
+.readparticipate-icon-text:after {content: "\f040  Read and Participate";}              /* Icon:    Pencil */
+.wrapup-icon-text:after {content: "\f024  Wrap up";}                                 /* Icon:    Flag */
+
+
+/* ---------- TAB ICONS With Text (BEFORE and AFTER) ---------- */
+
+[class*="-tab"]:before {
+    font-family: FontAwesome;
+    float: right;
+    font-weight: normal;
+    font-size: .8em;
+    color: #fff;
+    padding: 6px 15px 5px 15px;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+.synchronous-tab {border-bottom: 1px solid #503D6B;padding-bottom: 5px;}
+.synchronous-tab:before {
+    content: "\f021  Synchronous Session";
+    background-color: #503D6B;
+}
+
+.practice-tab {border-bottom: 1px solid #503D6B;padding-bottom: 5px;}
+.practice-tab:before {
+    content: "\f245  Practice";
+    background-color: #503D6B;
+}
+
+.asynchronous-tab {border-bottom: 1px solid #503D6B;padding-bottom: 5px;}
+.asynchronous-tab:before {
+    content: "\f021  Asynchronous Session";
+    background-color: #503D6B;
+}
+
+
+/*  Next page indicator
+---------------------------*/
+.next {font-size: .8em;	float: right; margin: 5px -20px 0px 0px;color: #CE5C00;}
+.next:before {font-family: FontAwesome;content: "\f078";float: right;margin-left: 10px;}
+
+
+
+/* jQuery changes 
+____________________ */
+
+/* Buttons Customization 
+--------------------------- */
+.ui-button{
+    border: 1px solid #cbcacc;
+    background: #ededed;
+    padding: 1em 1em
+}
+
+/* widget Customization 
+--------------------------- */
+.ui-widget {
+    font-size: 1em;
+    box-shadow: 2px 2px 4px rgba(69, 69, 70, 0.1);
+    clear: both;
+}
+
+#accordion h4 {
+    /* margin: 0px 0px 0px -26px; */
+    background-color: #D4DF38;
+    /* padding: 10px 25px; */
+    border-radius: 0px;
+}
+
+
+.ui-icon {float: right;margin: 5px;}
+
+
+.ui-tabs {
+    /*text-align: center;*/
+}
+
+#tabs h3 {
+    margin: .1em 0;
+}
+
+#tabs h4 {
+    /* margin: 0px 0px 0px -26px; */
+    background-color: #D4DF38;
+    /* padding: 10px 25px; */
+    border-radius: 0px;
+}
+
+/* fixed height on tabs for scrollable container */
+#tabs .ui-tabs-panel {
+/* disabled - not neccessary to have ...
+    height: 550px;
+    overflow: auto;*/
+}
+
+
+/** For print accessibility
+- Shows all hidden content in tabs and accordions 
+- Eco-friendly printing (min spacing between objects)
+- Removes images
+**/
+@media print {
+
+/** opens/displays all the accordion panels on a page **/
+    .ui-accordion .ui-accordion-content {
+        display: block !important;
+        height: auto !important;
+    }
+/** opens/displays all the tab panels/pane on a page **/	
+	.ui-tabs .ui-tabs-panel {
+	   display: block !important; 
+	   opacity: 1 !important; 
+	   visibility: visible !important;
+	}
+
+/** hides the nav-tabs **/
+	.ui-tabs-nav {display: none !important;}
+
+    body {
+        font-size: 10pt;
+    }
+	
+/** Hides images from printing **/	
+	img {display: none;}
+
+/** Minimize spacing **/	
+	hr {margin:0;}
+	
+
+    a:after{content:" ("attr(href)")" !important;display: inline !important;word-wrap: break-word;overflow: visible !important;}
+
+    [class$="icon"]:before {
+        content: "";font-family: FontAwesome;margin-right: 0;font-weight: normal;
+    }
+
+}
+
+
+
+/** For Responsive Mobile/Small Tablet view **/
+@media screen and (max-width: 767px) {
+
+/** Smaller Margins **/	
+	body {padding:0px 10px 5px 10px;font-size:14px;border-bottom: 15px solid #D4DF38;border-top: 5px solid #D4DF38;}
+    body:before {border-top: 10px solid #454546;}
+
+    .footer {margin: 10px -10px -10px -10px;padding: 10px;}
+
+
+
+/** Hides all images for better viewing **/
+	/*img {display: none;}*/
+
+	
+/** Minimize spacing **/		
+	hr {margin:20px 0;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
